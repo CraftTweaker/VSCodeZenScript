@@ -103,38 +103,46 @@
     "quotes": {
       "patterns": [
         {
-          "comment": "double quote string",
-          "name": "string.quoted.double.zenscript",
-          "contentName": "string.other.zenscript",
-          "begin": "\\\"",
+          "begin": "\"",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.string.begin"
+              "name": "punctuation.definition.string.begin.zenscript"
             }
           },
-          "end": "\\\"",
+          "end": "\"",
           "endCaptures": {
             "0": {
-              "name": "punctuation.definition.string.end"
+              "name": "punctuation.definition.string.end.zenscript"
             }
-          }
+          },
+          "name": "string.quoted.double.zenscript",
+          "patterns": [
+            {
+              "match": "\\\\.",
+              "name": "constant.character.escape.zenscript"
+            }
+          ]
         },
         {
-          "comment": "single quote string",
-          "name": "string.quoted.single.zenscript",
-          "contentName": "string.other.zenscript",
-          "begin": "\\'",
+          "begin": "'",
           "beginCaptures": {
             "0": {
-              "name": "punctuation.definition.string.begin"
+              "name": "punctuation.definition.string.begin.zenscript"
             }
           },
-          "end": "\\'",
+          "end": "'",
           "endCaptures": {
             "0": {
-              "name": "punctuation.definition.string.end"
+              "name": "punctuation.definition.string.end.zenscript"
             }
-          }
+          },
+          "name": "string.quoted.single.zenscript",
+          "patterns": [
+            {
+              "match": "\\\\.",
+              "name": "constant.character.escape.zenscript"
+            }
+          ]
         }
       ]
     },
