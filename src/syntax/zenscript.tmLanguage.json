@@ -102,49 +102,49 @@
     },
     "quotes": {
       "patterns": [
-        {
-          "begin": "\"",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.zenscript"
-            }
-          },
-          "end": "\"",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.zenscript"
-            }
-          },
-          "name": "string.quoted.double.zenscript",
-          "patterns": [
-            {
-              "match": "\\\\.",
-              "name": "constant.character.escape.zenscript"
-            }
-          ]
-        },
-        {
-          "begin": "'",
-          "beginCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.begin.zenscript"
-            }
-          },
-          "end": "'",
-          "endCaptures": {
-            "0": {
-              "name": "punctuation.definition.string.end.zenscript"
-            }
-          },
-          "name": "string.quoted.single.zenscript",
-          "patterns": [
-            {
-              "match": "\\\\.",
-              "name": "constant.character.escape.zenscript"
-            }
-          ]
-        }
-      ]
+				{
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.zenscript"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.zenscript"
+						}
+					},
+					"name": "string.quoted.double.zenscript",
+					"patterns": [
+						{
+							"match": "\\\\.",
+							"name": "constant.character.escape.zenscript"
+						}
+					]
+				},
+				{
+					"begin": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.zenscript"
+						}
+					},
+					"end": "'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.zenscript"
+						}
+					},
+					"name": "string.quoted.single.zenscript",
+					"patterns": [
+						{
+							"match": "\\\\.",
+							"name": "constant.character.escape.zenscript"
+						}
+					]
+				}
+			]
     },
     "brackets": {
       "patterns": [
