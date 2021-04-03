@@ -41,7 +41,8 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -b",
     "watch": "tsc -b -w",
-    "postinstall": "cd client && npm install && cd ../server && npm install && cd .."
+    "postinstall": "cd client && npm install && cd ../server && npm install && cd ..",
+    "antlr4ts": "antlr4ts ./server/src/antlr/ZenCodeParser.g4 ./server/src/antlr/ZenCodeLexer.g4 -o ./server/src/antlr/"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",

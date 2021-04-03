@@ -1,4 +1,4 @@
-// Generated from ./src/antlr/ZenCode.g4 by ANTLR 4.9.0-SNAPSHOT
+// Generated from ./server/src/antlr/ZenCodeLexer.g4 by ANTLR 4.9.0-SNAPSHOT
 
 
 import { ATN } from "antlr4ts/atn/ATN";
@@ -226,7 +226,7 @@ export class ZenCodeLexer extends Lexer {
 	}
 
 	// @Override
-	public get grammarFileName(): string { return "ZenCode.g4"; }
+	public get grammarFileName(): string { return "ZenCodeLexer.g4"; }
 
 	// @Override
 	public get ruleNames(): string[] { return ZenCodeLexer.ruleNames; }

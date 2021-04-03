@@ -1,4 +1,4 @@
-// Generated from ./src/antlr/ZenCode.g4 by ANTLR 4.9.0-SNAPSHOT
+// Generated from ./server/src/antlr/ZenCodeParser.g4 by ANTLR 4.9.0-SNAPSHOT
 
 
 import { ParseTreeListener } from "antlr4ts/tree/ParseTreeListener";
@@ -138,7 +138,7 @@ import { ZenFunctionLambdaContext } from "./ZenCodeParser";
  * This interface defines a complete listener for a parse tree produced by
  * `ZenCodeParser`.
  */
-export interface ZenCodeListener extends ParseTreeListener {
+export interface ZenCodeParserListener extends ParseTreeListener {
 	/**
 	 * Enter a parse tree produced by `ZenCodeParser.zenFile`.
 	 * @param ctx the parse tree

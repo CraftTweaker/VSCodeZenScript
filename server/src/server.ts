@@ -1,3 +1,6 @@
+/* eslint-disable no-empty */
+/* eslint-disable no-useless-escape */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import {
     CompletionItem,
     CompletionItemKind,
@@ -24,8 +27,8 @@ import {
 } from "antlr4ts";
 import {ZenCodeLexer} from "./antlr/ZenCodeLexer";
 import {ZenCodeParser} from "./antlr/ZenCodeParser";
-import {ParseTreeWalker} from 'antlr4ts/tree/ParseTreeWalker'
-import {ZenCodeListener} from "./antlr/ZenCodeListener";
+import {ParseTreeWalker} from 'antlr4ts/tree/ParseTreeWalker';
+import {ZenCodeParserListener} from "./antlr/ZenCodeParserListener";
 import {ErrorNode} from "antlr4ts/tree/ErrorNode";
 import {Token} from "antlr4ts/Token";
 import {ParserRuleContext} from "antlr4ts/ParserRuleContext";
@@ -33,17 +36,17 @@ import {ParserRuleContext} from "antlr4ts/ParserRuleContext";
 
 // Create a connection for the server, using Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
-let connection = createConnection(ProposedFeatures.all);
+const connection = createConnection(ProposedFeatures.all);
 
 // Create a simple text document manager.
-let documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
+const documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
 
-let hasConfigurationCapability: boolean = false;
-let hasWorkspaceFolderCapability: boolean = false;
-let hasDiagnosticRelatedInformationCapability: boolean = false;
+let hasConfigurationCapability = false;
+let hasWorkspaceFolderCapability = false;
+let hasDiagnosticRelatedInformationCapability = false;
 
 connection.onInitialize((params: InitializeParams) => {
-    let capabilities = params.capabilities;
+    const capabilities = params.capabilities;
 
     // Does the client support the `workspace/configuration` request?
     // If not, we fall back using global settings.
@@ -106,7 +109,7 @@ const defaultSettings: ExampleSettings = {maxNumberOfProblems: 1000};
 let globalSettings: ExampleSettings = defaultSettings;
 
 // Cache the settings of all open documents
-let documentSettings: Map<string, Thenable<ExampleSettings>> = new Map();
+const documentSettings: Map<string, Thenable<ExampleSettings>> = new Map();
 
 
 connection.onDidChangeConfiguration(change => {
@@ -150,30 +153,29 @@ documents.onDidChangeContent(change => {
 });
 
 async function validateTextDocument(textDocument: TextDocument): Promise<void> {
-    let diagnostics: Diagnostic[] = [];
+    const diagnostics: Diagnostic[] = [];
 
-    let inputStream = new ANTLRInputStream(textDocument.getText());
-    let lexer = new ZenCodeLexer(inputStream);
+    const inputStream = new ANTLRInputStream(textDocument.getText());
+    const lexer = new ZenCodeLexer(inputStream);
     lexer.removeErrorListeners();
-    let tokenStream = new CommonTokenStream(lexer);
-    let parser = new ZenCodeParser(tokenStream);
+    const tokenStream = new CommonTokenStream(lexer);
+    const parser = new ZenCodeParser(tokenStream);
     parser.removeErrorListeners();
 
-    class EnterFunctionListener implements ZenCodeListener {
+    class EnterFunctionListener implements ZenCodeParserListener {
 
         visitErrorNode(node: ErrorNode) {
 
-            console.log(node);
             if (!node.parent) {
                 return;
             }
-            let prevNode = (node.parent.getChild(node.parent.childCount-2).payload as Token);
+            const prevNode = (node.parent.getChild(node.parent.childCount-2).payload as Token);
 
             // @ts-ignore
             if (prevNode.stop === undefined || typeof prevNode.stop !== "object") {
                 return;
             }
-            let dRange: Range = {
+            const dRange: Range = {
 
                 start: {
                     // @ts-ignore
@@ -188,19 +190,19 @@ async function validateTextDocument(textDocument: TextDocument): Promise<void> {
                     character: prevNode.stop.charPositionInLine+1
                 }
             };
-            let severity = DiagnosticSeverity.Error;
-            let diagnostic = Diagnostic.create(dRange, node.symbol.text || "asd", severity);
+            const severity = DiagnosticSeverity.Error;
+            const diagnostic = Diagnostic.create(dRange, node.symbol.text || "Invalid Text!", severity);
             diagnostics.push(diagnostic);
 
         }
 
     }
 
-    const listener: ZenCodeListener = new EnterFunctionListener();
+    const listener: ZenCodeParserListener = new EnterFunctionListener();
 
 
-    let tree = parser.zenFile();
-    ParseTreeWalker.DEFAULT.walk(listener, tree)
+    const tree = parser.zenFile();
+    ParseTreeWalker.DEFAULT.walk(listener, tree);
 
 
     // Send the computed diagnostics to VSCode.
@@ -213,7 +215,7 @@ async function validateTextDocument(textDocument: TextDocument): Promise<void> {
 // @ts-ignore
 connection.onDocumentColor(params => {
     console.log(params);
-})
+});
 
 connection.onDidChangeWatchedFiles(_change => {
     // Monitored files have change in VSCode
@@ -224,23 +226,23 @@ connection.onDidChangeWatchedFiles(_change => {
 connection.onCompletion(
     (_textDocumentPosition: TextDocumentPositionParams): CompletionItem[] => {
 
-        let modids = ["minecraft", "forge", "crafttweaker", "modtweaker"];
-        let names = ["stick", "dirt", "diamond", "apple", "arrow"]
+        const modids = ["minecraft", "forge", "crafttweaker", "modtweaker"];
+        const names = ["stick", "dirt", "diamond", "apple", "arrow"];
 
-        let tokenReg = /(?:[()\[\]:]|['\w])+/g
+        const tokenReg = /(?:[()\[\]:]|['\w])+/g;
 
-        let text = documents.get(_textDocumentPosition.textDocument.uri)?.getText() || "";
-        let lines = text.split(/\r\n|\r|\n/)
+        const text = documents.get(_textDocumentPosition.textDocument.uri)?.getText() || "";
+        const lines = text.split(/\r\n|\r|\n/);
 
-        let line = lines[_textDocumentPosition.position.line]
+        const line = lines[_textDocumentPosition.position.line];
 
         let foundStart = false;
-        let startIndex = _textDocumentPosition.position.character - 1
+        let startIndex = _textDocumentPosition.position.character - 1;
         while (!foundStart) {
             if (startIndex < 0) {
                 break;
             }
-            let char = line.charAt(startIndex);
+            const char = line.charAt(startIndex);
             if (!char.match(tokenReg)) {
                 foundStart = true;
             } else {
@@ -248,13 +250,13 @@ connection.onCompletion(
             }
         }
         let foundEnd = false;
-        let endIndex = _textDocumentPosition.position.character + 1
-        let foundChar = ''
+        let endIndex = _textDocumentPosition.position.character + 1;
+        let foundChar = '';
         while (!foundEnd) {
             if (endIndex > line.length) {
                 break;
             }
-            let char = line.charAt(endIndex++);
+            const char = line.charAt(endIndex++);
             if (!char.match(tokenReg)) {
                 foundEnd = true;
                 foundChar = char;
@@ -263,7 +265,7 @@ connection.onCompletion(
         }
 
         // if start is <, get bracket handlers
-        let completions: CompletionItem[] = [{
+        const completions: CompletionItem[] = [{
             label: JSON.stringify({start: line.charAt(startIndex)}),
             filterText: "<item:",
             kind: CompletionItemKind.Enum
@@ -286,9 +288,9 @@ connection.onCompletion(
                             }
                         }
                     } as TextEdit
-                })
-            })
-        })
+                });
+            });
+        });
         return completions;
     }
 );

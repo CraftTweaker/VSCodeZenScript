@@ -1,4 +1,4 @@
-// Generated from ./src/antlr/ZenCode.g4 by ANTLR 4.9.0-SNAPSHOT
+// Generated from ./server/src/antlr/ZenCodeParser.g4 by ANTLR 4.9.0-SNAPSHOT
 
 
 import { ATN } from "antlr4ts/atn/ATN";
@@ -23,9 +23,7 @@ import { VocabularyImpl } from "antlr4ts/VocabularyImpl";
 
 import * as Utils from "antlr4ts/misc/Utils";
 
-import { ZenCodeListener } from "./ZenCodeListener";
-import { ZenCodeVisitor } from "./ZenCodeVisitor";
-
+import { ZenCodeParserListener } from "./ZenCodeParserListener";
 
 export class ZenCodeParser extends Parser {
 	public static readonly ZEN_KW_IMPORT = 1;
@@ -350,7 +348,7 @@ export class ZenCodeParser extends Parser {
 	// tslint:enable:no-trailing-whitespace
 
 	// @Override
-	public get grammarFileName(): string { return "ZenCode.g4"; }
+	public get grammarFileName(): string { return "ZenCodeParser.g4"; }
 
 	// @Override
 	public get ruleNames(): string[] { return ZenCodeParser.ruleNames; }
@@ -8817,23 +8815,15 @@ export class ZenFileContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFile; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFile) {
 			listener.enterZenFile(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFile) {
 			listener.exitZenFile(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFile) {
-			return visitor.visitZenFile(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -8857,23 +8847,15 @@ export class ZenSHLTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSHLToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSHLToken) {
 			listener.enterZenSHLToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSHLToken) {
 			listener.exitZenSHLToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSHLToken) {
-			return visitor.visitZenSHLToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -8897,23 +8879,15 @@ export class ZenSHRTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSHRToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSHRToken) {
 			listener.enterZenSHRToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSHRToken) {
 			listener.exitZenSHRToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSHRToken) {
-			return visitor.visitZenSHRToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -8938,23 +8912,15 @@ export class ZenUSHRTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenUSHRToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenUSHRToken) {
 			listener.enterZenUSHRToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenUSHRToken) {
 			listener.exitZenUSHRToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenUSHRToken) {
-			return visitor.visitZenUSHRToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -8978,23 +8944,15 @@ export class ZenAndAndTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAndAndToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAndAndToken) {
 			listener.enterZenAndAndToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAndAndToken) {
 			listener.exitZenAndAndToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAndAndToken) {
-			return visitor.visitZenAndAndToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9018,23 +8976,15 @@ export class ZenCoalesceTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenCoalesceToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenCoalesceToken) {
 			listener.enterZenCoalesceToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenCoalesceToken) {
 			listener.exitZenCoalesceToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenCoalesceToken) {
-			return visitor.visitZenCoalesceToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9058,23 +9008,15 @@ export class ZenDecrementTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDecrementToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDecrementToken) {
 			listener.enterZenDecrementToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDecrementToken) {
 			listener.exitZenDecrementToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDecrementToken) {
-			return visitor.visitZenDecrementToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9098,23 +9040,15 @@ export class ZenDot2TokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDot2Token; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDot2Token) {
 			listener.enterZenDot2Token(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDot2Token) {
 			listener.exitZenDot2Token(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDot2Token) {
-			return visitor.visitZenDot2Token(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9139,23 +9073,15 @@ export class ZenDot3TokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDot3Token; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDot3Token) {
 			listener.enterZenDot3Token(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDot3Token) {
 			listener.exitZenDot3Token(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDot3Token) {
-			return visitor.visitZenDot3Token(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9179,23 +9105,15 @@ export class ZenEqual2TokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenEqual2Token; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenEqual2Token) {
 			listener.enterZenEqual2Token(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenEqual2Token) {
 			listener.exitZenEqual2Token(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenEqual2Token) {
-			return visitor.visitZenEqual2Token(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9220,23 +9138,15 @@ export class ZenEqual3TokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenEqual3Token; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenEqual3Token) {
 			listener.enterZenEqual3Token(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenEqual3Token) {
 			listener.exitZenEqual3Token(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenEqual3Token) {
-			return visitor.visitZenEqual3Token(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9253,23 +9163,15 @@ export class ZenGreaterEqTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenGreaterEqToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenGreaterEqToken) {
 			listener.enterZenGreaterEqToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenGreaterEqToken) {
 			listener.exitZenGreaterEqToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenGreaterEqToken) {
-			return visitor.visitZenGreaterEqToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9293,23 +9195,15 @@ export class ZenIncrementTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenIncrementToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenIncrementToken) {
 			listener.enterZenIncrementToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenIncrementToken) {
 			listener.exitZenIncrementToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenIncrementToken) {
-			return visitor.visitZenIncrementToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9326,23 +9220,15 @@ export class ZenLambdaTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenLambdaToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenLambdaToken) {
 			listener.enterZenLambdaToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenLambdaToken) {
 			listener.exitZenLambdaToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenLambdaToken) {
-			return visitor.visitZenLambdaToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9359,23 +9245,15 @@ export class ZenLessEqTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenLessEqToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenLessEqToken) {
 			listener.enterZenLessEqToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenLessEqToken) {
 			listener.exitZenLessEqToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenLessEqToken) {
-			return visitor.visitZenLessEqToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9392,23 +9270,15 @@ export class ZenNotEqualTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenNotEqualToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenNotEqualToken) {
 			listener.enterZenNotEqualToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenNotEqualToken) {
 			listener.exitZenNotEqualToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenNotEqualToken) {
-			return visitor.visitZenNotEqualToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9434,23 +9304,15 @@ export class ZenNotEqual2TokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenNotEqual2Token; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenNotEqual2Token) {
 			listener.enterZenNotEqual2Token(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenNotEqual2Token) {
 			listener.exitZenNotEqual2Token(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenNotEqual2Token) {
-			return visitor.visitZenNotEqual2Token(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9467,23 +9329,15 @@ export class ZenOptCallTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenOptCallToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenOptCallToken) {
 			listener.enterZenOptCallToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenOptCallToken) {
 			listener.exitZenOptCallToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenOptCallToken) {
-			return visitor.visitZenOptCallToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9507,23 +9361,15 @@ export class ZenOrOrTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenOrOrToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenOrOrToken) {
 			listener.enterZenOrOrToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenOrOrToken) {
 			listener.exitZenOrOrToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenOrOrToken) {
-			return visitor.visitZenOrOrToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9540,23 +9386,15 @@ export class ZenAddAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAddAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAddAssignToken) {
 			listener.enterZenAddAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAddAssignToken) {
 			listener.exitZenAddAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAddAssignToken) {
-			return visitor.visitZenAddAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9573,23 +9411,15 @@ export class ZenAndAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAndAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAndAssignToken) {
 			listener.enterZenAndAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAndAssignToken) {
 			listener.exitZenAndAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAndAssignToken) {
-			return visitor.visitZenAndAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9606,23 +9436,15 @@ export class ZenCatAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenCatAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenCatAssignToken) {
 			listener.enterZenCatAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenCatAssignToken) {
 			listener.exitZenCatAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenCatAssignToken) {
-			return visitor.visitZenCatAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9639,23 +9461,15 @@ export class ZenDivAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDivAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDivAssignToken) {
 			listener.enterZenDivAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDivAssignToken) {
 			listener.exitZenDivAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDivAssignToken) {
-			return visitor.visitZenDivAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9672,23 +9486,15 @@ export class ZenModAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenModAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenModAssignToken) {
 			listener.enterZenModAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenModAssignToken) {
 			listener.exitZenModAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenModAssignToken) {
-			return visitor.visitZenModAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9705,23 +9511,15 @@ export class ZenMulAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenMulAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenMulAssignToken) {
 			listener.enterZenMulAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenMulAssignToken) {
 			listener.exitZenMulAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenMulAssignToken) {
-			return visitor.visitZenMulAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9738,23 +9536,15 @@ export class ZenOrAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenOrAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenOrAssignToken) {
 			listener.enterZenOrAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenOrAssignToken) {
 			listener.exitZenOrAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenOrAssignToken) {
-			return visitor.visitZenOrAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9780,23 +9570,15 @@ export class ZenSHLAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSHLAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSHLAssignToken) {
 			listener.enterZenSHLAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSHLAssignToken) {
 			listener.exitZenSHLAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSHLAssignToken) {
-			return visitor.visitZenSHLAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9822,23 +9604,15 @@ export class ZenSHRAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSHRAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSHRAssignToken) {
 			listener.enterZenSHRAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSHRAssignToken) {
 			listener.exitZenSHRAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSHRAssignToken) {
-			return visitor.visitZenSHRAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9855,23 +9629,15 @@ export class ZenSubAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSubAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSubAssignToken) {
 			listener.enterZenSubAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSubAssignToken) {
 			listener.exitZenSubAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSubAssignToken) {
-			return visitor.visitZenSubAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9898,23 +9664,15 @@ export class ZenUSHRAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenUSHRAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenUSHRAssignToken) {
 			listener.enterZenUSHRAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenUSHRAssignToken) {
 			listener.exitZenUSHRAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenUSHRAssignToken) {
-			return visitor.visitZenUSHRAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -9931,23 +9689,15 @@ export class ZenXOrAssignTokenContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenXOrAssignToken; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenXOrAssignToken) {
 			listener.enterZenXOrAssignToken(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenXOrAssignToken) {
 			listener.exitZenXOrAssignToken(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenXOrAssignToken) {
-			return visitor.visitZenXOrAssignToken(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10087,23 +9837,15 @@ export class ZenTypeContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenType; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenType) {
 			listener.enterZenType(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenType) {
 			listener.exitZenType(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenType) {
-			return visitor.visitZenType(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10136,23 +9878,15 @@ export class ZenTypeParamsContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenTypeParams; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenTypeParams) {
 			listener.enterZenTypeParams(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenTypeParams) {
 			listener.exitZenTypeParams(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenTypeParams) {
-			return visitor.visitZenTypeParams(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10193,23 +9927,15 @@ export class ZenTypeParamContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenTypeParam; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenTypeParam) {
 			listener.enterZenTypeParam(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenTypeParam) {
 			listener.exitZenTypeParam(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenTypeParam) {
-			return visitor.visitZenTypeParam(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10242,23 +9968,15 @@ export class ZenTypeArgumentsContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenTypeArguments; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenTypeArguments) {
 			listener.enterZenTypeArguments(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenTypeArguments) {
 			listener.exitZenTypeArguments(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenTypeArguments) {
-			return visitor.visitZenTypeArguments(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10294,23 +10012,15 @@ export class ZenCallArgumentsContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenCallArguments; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenCallArguments) {
 			listener.enterZenCallArguments(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenCallArguments) {
 			listener.exitZenCallArguments(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenCallArguments) {
-			return visitor.visitZenCallArguments(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10343,23 +10053,15 @@ export class ZenTypeArgumentsForcallContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenTypeArgumentsForcall; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenTypeArgumentsForcall) {
 			listener.enterZenTypeArgumentsForcall(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenTypeArgumentsForcall) {
 			listener.exitZenTypeArgumentsForcall(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenTypeArgumentsForcall) {
-			return visitor.visitZenTypeArgumentsForcall(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10395,23 +10097,15 @@ export class ZenAnnotationCallArgumentsContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAnnotationCallArguments; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAnnotationCallArguments) {
 			listener.enterZenAnnotationCallArguments(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAnnotationCallArguments) {
 			listener.exitZenAnnotationCallArguments(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAnnotationCallArguments) {
-			return visitor.visitZenAnnotationCallArguments(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10460,23 +10154,15 @@ export class ZenAnnotationsContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAnnotations; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAnnotations) {
 			listener.enterZenAnnotations(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAnnotations) {
 			listener.exitZenAnnotations(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAnnotations) {
-			return visitor.visitZenAnnotations(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10510,23 +10196,15 @@ export class ZenImportContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenImport; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenImport) {
 			listener.enterZenImport(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenImport) {
 			listener.exitZenImport(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenImport) {
-			return visitor.visitZenImport(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10541,23 +10219,15 @@ export class ZenVisibleAccessModifierContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenVisibleAccessModifier; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenVisibleAccessModifier) {
 			listener.enterZenVisibleAccessModifier(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenVisibleAccessModifier) {
 			listener.exitZenVisibleAccessModifier(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenVisibleAccessModifier) {
-			return visitor.visitZenVisibleAccessModifier(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10574,23 +10244,15 @@ export class ZenAccessModifierContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAccessModifier; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAccessModifier) {
 			listener.enterZenAccessModifier(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAccessModifier) {
 			listener.exitZenAccessModifier(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAccessModifier) {
-			return visitor.visitZenAccessModifier(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10612,23 +10274,15 @@ export class ZenDeclerationModifierContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDeclerationModifier; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDeclerationModifier) {
 			listener.enterZenDeclerationModifier(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDeclerationModifier) {
 			listener.exitZenDeclerationModifier(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDeclerationModifier) {
-			return visitor.visitZenDeclerationModifier(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10651,23 +10305,15 @@ export class ZenMemberNonStaticModifierContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenMemberNonStaticModifier; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenMemberNonStaticModifier) {
 			listener.enterZenMemberNonStaticModifier(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenMemberNonStaticModifier) {
 			listener.exitZenMemberNonStaticModifier(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenMemberNonStaticModifier) {
-			return visitor.visitZenMemberNonStaticModifier(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10691,23 +10337,15 @@ export class ZenMemberStaticModifierContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenMemberStaticModifier; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenMemberStaticModifier) {
 			listener.enterZenMemberStaticModifier(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenMemberStaticModifier) {
 			listener.exitZenMemberStaticModifier(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenMemberStaticModifier) {
-			return visitor.visitZenMemberStaticModifier(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10747,23 +10385,15 @@ export class ZenDefinitionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDefinition; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDefinition) {
 			listener.enterZenDefinition(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDefinition) {
 			listener.exitZenDefinition(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDefinition) {
-			return visitor.visitZenDefinition(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10805,23 +10435,15 @@ export class ZenClassContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenClass; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenClass) {
 			listener.enterZenClass(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenClass) {
 			listener.exitZenClass(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenClass) {
-			return visitor.visitZenClass(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10878,23 +10500,15 @@ export class ZenInterfaceContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenInterface; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenInterface) {
 			listener.enterZenInterface(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenInterface) {
 			listener.exitZenInterface(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenInterface) {
-			return visitor.visitZenInterface(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -10952,23 +10566,15 @@ export class ZenEnumContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenEnum; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenEnum) {
 			listener.enterZenEnum(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenEnum) {
 			listener.exitZenEnum(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenEnum) {
-			return visitor.visitZenEnum(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11006,23 +10612,15 @@ export class ZenStructContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStruct; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStruct) {
 			listener.enterZenStruct(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStruct) {
 			listener.exitZenStruct(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStruct) {
-			return visitor.visitZenStruct(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11054,23 +10652,15 @@ export class ZenAliasContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAlias; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAlias) {
 			listener.enterZenAlias(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAlias) {
 			listener.exitZenAlias(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAlias) {
-			return visitor.visitZenAlias(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11100,23 +10690,15 @@ export class ZenFunctionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFunction; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFunction) {
 			listener.enterZenFunction(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFunction) {
 			listener.exitZenFunction(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFunction) {
-			return visitor.visitZenFunction(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11156,23 +10738,15 @@ export class ZenExpansionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenExpansion; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenExpansion) {
 			listener.enterZenExpansion(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenExpansion) {
 			listener.exitZenExpansion(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenExpansion) {
-			return visitor.visitZenExpansion(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11229,23 +10803,15 @@ export class ZenVariantContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenVariant; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenVariant) {
 			listener.enterZenVariant(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenVariant) {
 			listener.exitZenVariant(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenVariant) {
-			return visitor.visitZenVariant(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11279,23 +10845,15 @@ export class ZenVariantOptionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenVariantOption; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenVariantOption) {
 			listener.enterZenVariantOption(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenVariantOption) {
 			listener.exitZenVariantOption(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenVariantOption) {
-			return visitor.visitZenVariantOption(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11330,23 +10888,15 @@ export class ZenEnumConstantContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenEnumConstant; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenEnumConstant) {
 			listener.enterZenEnumConstant(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenEnumConstant) {
 			listener.exitZenEnumConstant(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenEnumConstant) {
-			return visitor.visitZenEnumConstant(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11416,23 +10966,15 @@ export class ZenDefinitionMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDefinitionMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDefinitionMember) {
 			listener.enterZenDefinitionMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDefinitionMember) {
 			listener.exitZenDefinitionMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDefinitionMember) {
-			return visitor.visitZenDefinitionMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11494,23 +11036,15 @@ export class ZenFieldMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFieldMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFieldMember) {
 			listener.enterZenFieldMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFieldMember) {
 			listener.exitZenFieldMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFieldMember) {
-			return visitor.visitZenFieldMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11530,23 +11064,15 @@ export class ZenThisMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenThisMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenThisMember) {
 			listener.enterZenThisMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenThisMember) {
 			listener.exitZenThisMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenThisMember) {
-			return visitor.visitZenThisMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11575,23 +11101,15 @@ export class ZenConstOrMethodMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenConstOrMethodMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenConstOrMethodMember) {
 			listener.enterZenConstOrMethodMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenConstOrMethodMember) {
 			listener.exitZenConstOrMethodMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenConstOrMethodMember) {
-			return visitor.visitZenConstOrMethodMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11613,23 +11131,15 @@ export class ZenSetterMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSetterMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSetterMember) {
 			listener.enterZenSetterMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSetterMember) {
 			listener.exitZenSetterMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSetterMember) {
-			return visitor.visitZenSetterMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11651,23 +11161,15 @@ export class ZenGetterMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenGetterMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenGetterMember) {
 			listener.enterZenGetterMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenGetterMember) {
 			listener.exitZenGetterMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenGetterMember) {
-			return visitor.visitZenGetterMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11696,23 +11198,15 @@ export class ZenImplementsMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenImplementsMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenImplementsMember) {
 			listener.enterZenImplementsMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenImplementsMember) {
 			listener.exitZenImplementsMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenImplementsMember) {
-			return visitor.visitZenImplementsMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11731,23 +11225,15 @@ export class ZenCallerMemberContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenCallerMember; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenCallerMember) {
 			listener.enterZenCallerMember(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenCallerMember) {
 			listener.exitZenCallerMember(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenCallerMember) {
-			return visitor.visitZenCallerMember(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11769,23 +11255,15 @@ export class ZenIndexGetOperatorContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenIndexGetOperator; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenIndexGetOperator) {
 			listener.enterZenIndexGetOperator(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenIndexGetOperator) {
 			listener.exitZenIndexGetOperator(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenIndexGetOperator) {
-			return visitor.visitZenIndexGetOperator(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11803,23 +11281,15 @@ export class ZenDestructorContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDestructor; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDestructor) {
 			listener.enterZenDestructor(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDestructor) {
 			listener.exitZenDestructor(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDestructor) {
-			return visitor.visitZenDestructor(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11914,23 +11384,15 @@ export class ZenOperatorContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenOperator; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenOperator) {
 			listener.enterZenOperator(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenOperator) {
 			listener.exitZenOperator(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenOperator) {
-			return visitor.visitZenOperator(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11952,23 +11414,15 @@ export class ZenEqualsOperatorContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenEqualsOperator; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenEqualsOperator) {
 			listener.enterZenEqualsOperator(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenEqualsOperator) {
 			listener.exitZenEqualsOperator(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenEqualsOperator) {
-			return visitor.visitZenEqualsOperator(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -11988,23 +11442,15 @@ export class ZenCasterContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenCaster; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenCaster) {
 			listener.enterZenCaster(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenCaster) {
 			listener.exitZenCaster(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenCaster) {
-			return visitor.visitZenCaster(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12024,23 +11470,15 @@ export class ZenContainsOperatorContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenContainsOperator; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenContainsOperator) {
 			listener.enterZenContainsOperator(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenContainsOperator) {
 			listener.exitZenContainsOperator(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenContainsOperator) {
-			return visitor.visitZenContainsOperator(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12056,23 +11494,15 @@ export class ZenInnerDefinitionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenInnerDefinition; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenInnerDefinition) {
 			listener.enterZenInnerDefinition(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenInnerDefinition) {
 			listener.exitZenInnerDefinition(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenInnerDefinition) {
-			return visitor.visitZenInnerDefinition(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12092,23 +11522,15 @@ export class ZenIteratorContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenIterator; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenIterator) {
 			listener.enterZenIterator(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenIterator) {
 			listener.exitZenIterator(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenIterator) {
-			return visitor.visitZenIterator(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12125,23 +11547,15 @@ export class ZenStaticInitializerContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStaticInitializer; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStaticInitializer) {
 			listener.enterZenStaticInitializer(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStaticInitializer) {
 			listener.exitZenStaticInitializer(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStaticInitializer) {
-			return visitor.visitZenStaticInitializer(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12189,23 +11603,15 @@ export class ZenFunctionHeaderContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFunctionHeader; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFunctionHeader) {
 			listener.enterZenFunctionHeader(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFunctionHeader) {
 			listener.exitZenFunctionHeader(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFunctionHeader) {
-			return visitor.visitZenFunctionHeader(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12234,23 +11640,15 @@ export class ZenFunctionParameterContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFunctionParameter; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFunctionParameter) {
 			listener.enterZenFunctionParameter(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFunctionParameter) {
 			listener.exitZenFunctionParameter(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFunctionParameter) {
-			return visitor.visitZenFunctionParameter(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12270,23 +11668,15 @@ export class ZenFunctionBodyStatementContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFunctionBodyStatement; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFunctionBodyStatement) {
 			listener.enterZenFunctionBodyStatement(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFunctionBodyStatement) {
 			listener.exitZenFunctionBodyStatement(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFunctionBodyStatement) {
-			return visitor.visitZenFunctionBodyStatement(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12303,23 +11693,15 @@ export class ZenFunctionBodyContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFunctionBody; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFunctionBody) {
 			listener.enterZenFunctionBody(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFunctionBody) {
 			listener.exitZenFunctionBody(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFunctionBody) {
-			return visitor.visitZenFunctionBody(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12333,23 +11715,15 @@ export class ZenIntExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenIntExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenIntExpression) {
 			listener.enterZenIntExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenIntExpression) {
 			listener.exitZenIntExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenIntExpression) {
-			return visitor.visitZenIntExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12363,23 +11737,15 @@ export class ZenPrefixedIntExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenPrefixedIntExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenPrefixedIntExpression) {
 			listener.enterZenPrefixedIntExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenPrefixedIntExpression) {
 			listener.exitZenPrefixedIntExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenPrefixedIntExpression) {
-			return visitor.visitZenPrefixedIntExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12393,23 +11759,15 @@ export class ZenFloatExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFloatExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFloatExpression) {
 			listener.enterZenFloatExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFloatExpression) {
 			listener.exitZenFloatExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFloatExpression) {
-			return visitor.visitZenFloatExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12423,23 +11781,15 @@ export class ZenStringExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStringExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStringExpression) {
 			listener.enterZenStringExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStringExpression) {
 			listener.exitZenStringExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStringExpression) {
-			return visitor.visitZenStringExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12456,23 +11806,15 @@ export class ZenVariableExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenVariableExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenVariableExpression) {
 			listener.enterZenVariableExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenVariableExpression) {
 			listener.exitZenVariableExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenVariableExpression) {
-			return visitor.visitZenVariableExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12487,23 +11829,15 @@ export class ZenLocalExpressionVariableContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenLocalExpressionVariable; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenLocalExpressionVariable) {
 			listener.enterZenLocalExpressionVariable(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenLocalExpressionVariable) {
 			listener.exitZenLocalExpressionVariable(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenLocalExpressionVariable) {
-			return visitor.visitZenLocalExpressionVariable(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12517,23 +11851,15 @@ export class ZenThisExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenThisExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenThisExpression) {
 			listener.enterZenThisExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenThisExpression) {
 			listener.exitZenThisExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenThisExpression) {
-			return visitor.visitZenThisExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12547,23 +11873,15 @@ export class ZenSuperExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSuperExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSuperExpression) {
 			listener.enterZenSuperExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSuperExpression) {
 			listener.exitZenSuperExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSuperExpression) {
-			return visitor.visitZenSuperExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12577,23 +11895,15 @@ export class ZenDollarExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenDollarExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenDollarExpression) {
 			listener.enterZenDollarExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenDollarExpression) {
 			listener.exitZenDollarExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenDollarExpression) {
-			return visitor.visitZenDollarExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12626,23 +11936,15 @@ export class ZenArrayExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenArrayExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenArrayExpression) {
 			listener.enterZenArrayExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenArrayExpression) {
 			listener.exitZenArrayExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenArrayExpression) {
-			return visitor.visitZenArrayExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12684,23 +11986,15 @@ export class ZenMapExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenMapExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenMapExpression) {
 			listener.enterZenMapExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenMapExpression) {
 			listener.exitZenMapExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenMapExpression) {
-			return visitor.visitZenMapExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12714,23 +12008,15 @@ export class ZenTrueExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenTrueExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenTrueExpression) {
 			listener.enterZenTrueExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenTrueExpression) {
 			listener.exitZenTrueExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenTrueExpression) {
-			return visitor.visitZenTrueExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12744,23 +12030,15 @@ export class ZenFalseExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFalseExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFalseExpression) {
 			listener.enterZenFalseExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFalseExpression) {
 			listener.exitZenFalseExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFalseExpression) {
-			return visitor.visitZenFalseExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12774,23 +12052,15 @@ export class ZenNullExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenNullExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenNullExpression) {
 			listener.enterZenNullExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenNullExpression) {
 			listener.exitZenNullExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenNullExpression) {
-			return visitor.visitZenNullExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12823,23 +12093,15 @@ export class ZenBracketExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenBracketExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenBracketExpression) {
 			listener.enterZenBracketExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenBracketExpression) {
 			listener.exitZenBracketExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenBracketExpression) {
-			return visitor.visitZenBracketExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12859,23 +12121,15 @@ export class ZenNewExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenNewExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenNewExpression) {
 			listener.enterZenNewExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenNewExpression) {
 			listener.exitZenNewExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenNewExpression) {
-			return visitor.visitZenNewExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12892,23 +12146,15 @@ export class ZenThrowExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenThrowExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenThrowExpression) {
 			listener.enterZenThrowExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenThrowExpression) {
 			listener.exitZenThrowExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenThrowExpression) {
-			return visitor.visitZenThrowExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12925,23 +12171,15 @@ export class ZenPanicExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenPanicExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenPanicExpression) {
 			listener.enterZenPanicExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenPanicExpression) {
 			listener.exitZenPanicExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenPanicExpression) {
-			return visitor.visitZenPanicExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -12993,23 +12231,15 @@ export class ZenMatchExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenMatchExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenMatchExpression) {
 			listener.enterZenMatchExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenMatchExpression) {
 			listener.exitZenMatchExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenMatchExpression) {
-			return visitor.visitZenMatchExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13041,23 +12271,15 @@ export class ZenBracketHandlerExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenBracketHandlerExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenBracketHandlerExpression) {
 			listener.enterZenBracketHandlerExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenBracketHandlerExpression) {
 			listener.exitZenBracketHandlerExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenBracketHandlerExpression) {
-			return visitor.visitZenBracketHandlerExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13133,23 +12355,15 @@ export class ZenPrimaryExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenPrimaryExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenPrimaryExpression) {
 			listener.enterZenPrimaryExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenPrimaryExpression) {
 			listener.exitZenPrimaryExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenPrimaryExpression) {
-			return visitor.visitZenPrimaryExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13318,23 +12532,15 @@ export class ZenPostfixExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenPostfixExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenPostfixExpression) {
 			listener.enterZenPostfixExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenPostfixExpression) {
 			listener.exitZenPostfixExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenPostfixExpression) {
-			return visitor.visitZenPostfixExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13364,23 +12570,15 @@ export class ZenUnaryExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenUnaryExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenUnaryExpression) {
 			listener.enterZenUnaryExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenUnaryExpression) {
 			listener.exitZenUnaryExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenUnaryExpression) {
-			return visitor.visitZenUnaryExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13429,23 +12627,15 @@ export class ZenMulExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenMulExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenMulExpression) {
 			listener.enterZenMulExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenMulExpression) {
 			listener.exitZenMulExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenMulExpression) {
-			return visitor.visitZenMulExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13494,23 +12684,15 @@ export class ZenAddExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAddExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAddExpression) {
 			listener.enterZenAddExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAddExpression) {
 			listener.exitZenAddExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAddExpression) {
-			return visitor.visitZenAddExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13559,23 +12741,15 @@ export class ZenShiftExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenShiftExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenShiftExpression) {
 			listener.enterZenShiftExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenShiftExpression) {
 			listener.exitZenShiftExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenShiftExpression) {
-			return visitor.visitZenShiftExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13623,23 +12797,15 @@ export class ZenCompareExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenCompareExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenCompareExpression) {
 			listener.enterZenCompareExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenCompareExpression) {
 			listener.exitZenCompareExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenCompareExpression) {
-			return visitor.visitZenCompareExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13670,23 +12836,15 @@ export class ZenAndExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAndExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAndExpression) {
 			listener.enterZenAndExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAndExpression) {
 			listener.exitZenAndExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAndExpression) {
-			return visitor.visitZenAndExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13717,23 +12875,15 @@ export class ZenXorExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenXorExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenXorExpression) {
 			listener.enterZenXorExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenXorExpression) {
 			listener.exitZenXorExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenXorExpression) {
-			return visitor.visitZenXorExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13764,23 +12914,15 @@ export class ZenOrExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenOrExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenOrExpression) {
 			listener.enterZenOrExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenOrExpression) {
 			listener.exitZenOrExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenOrExpression) {
-			return visitor.visitZenOrExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13811,23 +12953,15 @@ export class ZenAndAndExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAndAndExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAndAndExpression) {
 			listener.enterZenAndAndExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAndAndExpression) {
 			listener.exitZenAndAndExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAndAndExpression) {
-			return visitor.visitZenAndAndExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13867,23 +13001,15 @@ export class ZenOrOrExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenOrOrExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenOrOrExpression) {
 			listener.enterZenOrOrExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenOrOrExpression) {
 			listener.exitZenOrOrExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenOrOrExpression) {
-			return visitor.visitZenOrOrExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13910,23 +13036,15 @@ export class ZenConditionalExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenConditionalExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenConditionalExpression) {
 			listener.enterZenConditionalExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenConditionalExpression) {
 			listener.exitZenConditionalExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenConditionalExpression) {
-			return visitor.visitZenConditionalExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -13982,23 +13100,15 @@ export class ZenAssignExpressionContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAssignExpression; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAssignExpression) {
 			listener.enterZenAssignExpression(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAssignExpression) {
 			listener.exitZenAssignExpression(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAssignExpression) {
-			return visitor.visitZenAssignExpression(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14022,23 +13132,15 @@ export class ZenStatementBlockContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementBlock; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementBlock) {
 			listener.enterZenStatementBlock(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementBlock) {
 			listener.exitZenStatementBlock(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementBlock) {
-			return visitor.visitZenStatementBlock(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14056,23 +13158,15 @@ export class ZenStatementReturnContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementReturn; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementReturn) {
 			listener.enterZenStatementReturn(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementReturn) {
 			listener.exitZenStatementReturn(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementReturn) {
-			return visitor.visitZenStatementReturn(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14098,23 +13192,15 @@ export class ZenStatementVarContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementVar; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementVar) {
 			listener.enterZenStatementVar(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementVar) {
 			listener.exitZenStatementVar(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementVar) {
-			return visitor.visitZenStatementVar(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14141,23 +13227,15 @@ export class ZenStatementIfContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementIf; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementIf) {
 			listener.enterZenStatementIf(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementIf) {
 			listener.exitZenStatementIf(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementIf) {
-			return visitor.visitZenStatementIf(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14196,23 +13274,15 @@ export class ZenStatementForContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementFor; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementFor) {
 			listener.enterZenStatementFor(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementFor) {
 			listener.exitZenStatementFor(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementFor) {
-			return visitor.visitZenStatementFor(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14236,23 +13306,15 @@ export class ZenStatementDoContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementDo; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementDo) {
 			listener.enterZenStatementDo(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementDo) {
 			listener.exitZenStatementDo(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementDo) {
-			return visitor.visitZenStatementDo(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14274,23 +13336,15 @@ export class ZenStatementWhileContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementWhile; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementWhile) {
 			listener.enterZenStatementWhile(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementWhile) {
 			listener.exitZenStatementWhile(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementWhile) {
-			return visitor.visitZenStatementWhile(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14310,23 +13364,15 @@ export class ZenStatementLockContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementLock; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementLock) {
 			listener.enterZenStatementLock(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementLock) {
 			listener.exitZenStatementLock(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementLock) {
-			return visitor.visitZenStatementLock(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14344,23 +13390,15 @@ export class ZenStatementThrowContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementThrow; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementThrow) {
 			listener.enterZenStatementThrow(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementThrow) {
 			listener.exitZenStatementThrow(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementThrow) {
-			return visitor.visitZenStatementThrow(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14424,23 +13462,15 @@ export class ZenStatementTryContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementTry; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementTry) {
 			listener.enterZenStatementTry(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementTry) {
 			listener.exitZenStatementTry(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementTry) {
-			return visitor.visitZenStatementTry(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14456,23 +13486,15 @@ export class ZenStatementContinueContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementContinue; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementContinue) {
 			listener.enterZenStatementContinue(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementContinue) {
 			listener.exitZenStatementContinue(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementContinue) {
-			return visitor.visitZenStatementContinue(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14488,23 +13510,15 @@ export class ZenStatementBreakContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatementBreak; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatementBreak) {
 			listener.enterZenStatementBreak(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatementBreak) {
 			listener.exitZenStatementBreak(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatementBreak) {
-			return visitor.visitZenStatementBreak(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14522,23 +13536,15 @@ export class ZenSwitchCaseStatementContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSwitchCaseStatement; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSwitchCaseStatement) {
 			listener.enterZenSwitchCaseStatement(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSwitchCaseStatement) {
 			listener.exitZenSwitchCaseStatement(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSwitchCaseStatement) {
-			return visitor.visitZenSwitchCaseStatement(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14594,23 +13600,15 @@ export class ZenSwitchStatementContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenSwitchStatement; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenSwitchStatement) {
 			listener.enterZenSwitchStatement(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenSwitchStatement) {
 			listener.exitZenSwitchStatement(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenSwitchStatement) {
-			return visitor.visitZenSwitchStatement(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14666,23 +13664,15 @@ export class ZenStatementContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenStatement; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenStatement) {
 			listener.enterZenStatement(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenStatement) {
 			listener.exitZenStatement(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenStatement) {
-			return visitor.visitZenStatement(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14741,23 +13731,15 @@ export class ZenAnnotatedStatementContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenAnnotatedStatement; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenAnnotatedStatement) {
 			listener.enterZenAnnotatedStatement(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenAnnotatedStatement) {
 			listener.exitZenAnnotatedStatement(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenAnnotatedStatement) {
-			return visitor.visitZenAnnotatedStatement(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14779,23 +13761,15 @@ export class ZenExpressionLambdaContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenExpressionLambda; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenExpressionLambda) {
 			listener.enterZenExpressionLambda(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenExpressionLambda) {
 			listener.exitZenExpressionLambda(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenExpressionLambda) {
-			return visitor.visitZenExpressionLambda(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -14818,23 +13792,15 @@ export class ZenFunctionLambdaContext extends ParserRuleContext {
 	// @Override
 	public get ruleIndex(): number { return ZenCodeParser.RULE_zenFunctionLambda; }
 	// @Override
-	public enterRule(listener: ZenCodeListener): void {
+	public enterRule(listener: ZenCodeParserListener): void {
 		if (listener.enterZenFunctionLambda) {
 			listener.enterZenFunctionLambda(this);
 		}
 	}
 	// @Override
-	public exitRule(listener: ZenCodeListener): void {
+	public exitRule(listener: ZenCodeParserListener): void {
 		if (listener.exitZenFunctionLambda) {
 			listener.exitZenFunctionLambda(this);
-		}
-	}
-	// @Override
-	public accept<Result>(visitor: ZenCodeVisitor<Result>): Result {
-		if (visitor.visitZenFunctionLambda) {
-			return visitor.visitZenFunctionLambda(this);
-		} else {
-			return visitor.visitChildren(this);
 		}
 	}
 }
